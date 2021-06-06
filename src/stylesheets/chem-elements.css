@@ -13,12 +13,12 @@
   box-shadow: 0 0 0.2em 0.2em rgba(255, 255, 255, 0.05);
 }
 
-.chem-element[data-element="neon"]::before {
-  content: "10";
+.chem-element[data-element="calcium"]::before {
+  content: "20";
   font-size: 0.45em;
   vertical-align: -0.5em;
 }
 
-.chem-element[data-element="neon"]:hover {
+.chem-element[data-element="calcium"]:hover {
   background: #faa3a3;
 }

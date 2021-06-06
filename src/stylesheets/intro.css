@@ -21,6 +21,7 @@
 }
 
 .intro p {
+  border-left: 0.25em solid #006080;
   color: #555;
   font-size: 1.2em;
   font-weight: 300;
@@ -31,14 +32,9 @@
 }
 
 .intro .label-group {
-  border-bottom: 0.1em solid rgba(0, 0, 0, 0.05);
-  display: block;
-  margin-top: 3em;
+  box-shadow: inset 0.25em 0 0.25em -0.25em #4600806b;
+  margin-top: 2em;
   width: 100%;
-}
-
-.intro .label-group:last-child {
-  border-bottom: none;
 }
 
 .intro .label-group .header.alt {
@@ -56,7 +52,7 @@
 
 .intro .label-group .label {
   background: transparent;
-  box-shadow: none;
+  box-shadow: inset 0 -0.25em 0.25em -0.25em rgba(1, 105, 124, 0.5);
   margin: 0.25em 0.25em;
   padding: 0 0.25em;
   transition-duration: 0.5s;

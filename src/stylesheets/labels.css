@@ -28,6 +28,11 @@
   line-height: 2.2em;
   margin: 0.25em 0;
   padding: 0 0.5em;
+  transition-duration: 0.5s;
+}
+
+.label-group .label:hover {
+  background: #fff;
 }
 
 .label-group a.label {

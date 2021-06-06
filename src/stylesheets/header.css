@@ -5,7 +5,7 @@
 
 @media (max-width: 768px) {
   .section.header {
-    flex-direction: column;
+      flex-direction: column;
   }
 }
 
@@ -36,15 +36,15 @@
 }
 
 .section.header .name.lang-cn::after {
-  content: "zh-CN";
+  content: 'zh-CN';
 }
 
 .section.header .name.lang-en::after {
-  content: "en-US";
+  content: 'en-US';
 }
 
 .section.header .name.lang-ja::after {
-  content: "ja-JP";
+  content: 'ja-JP';
 }
 
 .section.header .picture {
@@ -54,6 +54,11 @@
   box-shadow: 0 0 0.15em 0.15em rgba(0, 0, 0, 0.15);
   display: block;
   overflow: hidden;
+  transition: transform 1s cubic-bezier(0.75, 0.00, 0.25, 0.00)
+}
+
+.picture:hover {
+  transform: rotateZ(540deg);
 }
 
 .section.header .picture img {
