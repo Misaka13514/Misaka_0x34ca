@@ -60,6 +60,15 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "index.html",
+      filename: "index.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "zh.html",
+      filename: "zh.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "ja.html",
+      filename: "ja.html",
     }),
   ],
 };
