@@ -17,155 +17,50 @@
 <body>
   <div id="container">
     <div class="section header grid-container grid-parent">
-      <div class="split picture-container grid-40">
-        <a href="${require('./assets/images/Misaka.png')}">
-          <picture class="picture">
-            <source type="image/webp" srcset="${require('./assets/images/Misaka@1x.webp')}" />
-            <img src="${require('./assets/images/Misaka@1x.jpg')}" />
-          </picture>
+      <div class="label-group">
+        <span class="header">choose a language</span>
+        <a href="zh.html">
+          <span class="label">
+            <i aria-hidden="true" class="fas fa-language"></i>
+            中文
+          </span>
+        </a>
+        <a href="en.html">
+          <span class="label">
+            English
+          </span>
+        </a>
+        <a href="ja.html">
+          <span class="label">
+            日本語
+          </span>
         </a>
       </div>
+    </div>
 
-      <div class="split grid-60">
-        <div class="names">
-          <h1 class="name">
-            <span class="no-wrap">
-              Misaka_0x34
-              <a class="chem-element" data-element="calcium" href="https://en.wikipedia.org/wiki/Calcium"
-                target="_blank" rel="external noopenner nofollow">Ca</a>&nbsp;
-            </span>
-          </h1>
-        </div>
-
-        <div class="label-group">
-          <span class="header">language</span>
-          <a href="zh.html">
-            <span class="label" title="这位用户的母语是中文。">
-              <i aria-hidden="true" class="fas fa-language"></i>
-              Chinese
-            </span>
-          </a>
-          <a href=".">
-            <span class="label" title="This user has an intermediate level of English.">
-              <strong>English</strong>
-            </span>
-          </a>
-          <a href="ja.html">
-            <span class="label" title="この利用者は簡単な日本語を話します。">
-              Japanese
-            </span>
-          </a>
-        </div>
-
-        <div class="label-group">
-          <span class="header">location</span>
-          <a href="https://en.wikipedia.org/wiki/Shanghai" target="_blank" rel="external noopenner nofollow">
-            <span class="label" title="This user lives in Shanghai.">
-              <i aria-hidden="true" class="fas fa-map-marker"></i>
-              Asia/Shanghai
-            </span>
-          </a>
-        </div>
-
-        <div class="label-group">
-          <span class="header">organization</span>
-          <span class="label" title="This Misaka is connected to the Misaka Network via the AIM Diffusion Field.">
-            <i aria-hidden="true" class="fas fa-users"></i>
-            Misaka Network
-          </span>
-        </div>
-
-        <div class="label-group">
-          <span class="header">noc-operator</span>
-          <a href="https://blog.atri.tk/dn42-peering/">
-            <span class="label" title="Peer me in DN42!">
-              <i aria-hidden="true" class="fas fa-network-wired"></i>
-              AS4242421032
-            </span>
-          </a>
-        </div>
-
-        <div class="label-group">
-          <span class="header">shell</span>
-          <a href="https://fishshell.com" target="_blank" rel="external noopenner nofollow">
-            <span class="label">
-              <i aria-hidden="true" class="fas fa-terminal"></i>
-              fish
-            </span>
-          </a>
-          <!-- <span class="label"> zsh </span> -->
-        </div>
-
-        <div class="label-group">
-          <span class="header">platforms</span>
-          <a href="https://archlinux.org" target="_blank" rel="external noopenner nofollow">
-            <span class="label" title="This user uses Arch Linux daily.">
-              <i aria-hidden="true" class="fab fa-linux"></i>
-              Arch
-            </span>
-          </a>
-          <a href="https://www.debian.org" target="_blank" rel="external noopenner nofollow">
-            <span class="label" title="This user uses Debian on server.">
-              Debian
-            </span>
-          </a>
-          <a href="https://www.synology.com/en-global/dsm" target="_blank" rel="external noopenner nofollow">
-            <span class="label" title="This user uses Synology DiskStation Manager on NAS.">
-              DSM
-            </span>
-          </a>
-          <a href="https://openwrt.org" target="_blank" rel="external noopenner nofollow">
-            <span class="label" title="This user uses OpenWrt on router.">
-              OpenWrt
-            </span>
-          </a>
-          <a href="https://www.apple.com/macos/big-sur/" target="_blank" rel="external noopenner nofollow">
-            <span class="label" title="This user uses Hackintosh macOS Big Sur.">
-              <i aria-hidden="true" class="fab fa-apple"></i>
-              macOS
-            </span>
-          </a>
-          <a href="https://www.android.com" target="_blank" rel="external noopenner nofollow">
-            <span class="label" title="This user uses Android 11.">
-              <i aria-hidden="true" class="fab fa-android"></i>
-              11
-            </span>
-          </a>
-          <span class="label" title="This user doesn't use Windows.">
-            <del>
-              <i aria-hidden="true" class="fab fa-windows"></i>
-              10
-            </del>
-          </span>
-        </div>
-
-        <div class="label-group">
-          <span class="header">editor</span>
-          <a href="https://code.visualstudio.com" target="_blank" rel="external noopenner nofollow">
-            <span class="label">
-              <i aria-hidden="true" class="fas fa-code"></i>
-              VS Code
-            </span>
-          </a>
-          <a href="https://www.vim.org" target="_blank" rel="external noopenner nofollow">
-            <span class="label"> Vim </span>
-          </a>
-        </div>
-
-        <div class="label-group">
-          <span class="header">lang & runtime</span>
-          <span class="label">
-            <i aria-hidden="true" class="fas fa-plug"></i>
-            Python 3 && C && C++
-          </span>
-        </div>
-
-        <div class="label-group">
-          <span class="header">indent</span>
-          <span class="label">
-            <i aria-hidden="true" class="fa fas fa-i-cursor"></i>
-            Spaces
-          </span>
+    <div class="section intro">
+      <div class="block grid-container grid-parent">
+        <div class="split grid-50 mobile-grid-100">
+          <h2>
+            <i aria-hidden="true" class="fa fa-chevron-right"></i>Choose a language
+          </h2>
+          <small>
+            <p>
+              Please choose a language.
+              The page will be redirected automatically in a few seconds.
+              Different pages may contain different content.
+            </p>
+            <p>
+              请选择语言。
+              页面将在几秒钟内自动重定向。
+              不同的页面可能会包含不同的内容。
+            </p>
+            <p>
+              言語を選択してください。
+              ページは数秒で自動的にリダイレクトされます。
+              異なるページには異なるコンテンツが含まれている場合があります。
+            </p>
+          </small>
         </div>
       </div>
     </div>
@@ -186,11 +81,22 @@
       </a>
       <div class="copyright">
         <i aria-hidden="true" class="fas fa-exclamation-triangle"></i>
-        Copyright © 2019-2021 Misaka13514. Illustrations have their own
-        licenses.
+        Copyright © 2019-2021 Misaka13514. Illustrations have their own licenses.
       </div>
     </div>
   </div>
 </body>
+
+<script data-cfasync="false">
+  var language = localStorage.getItem('locale') || window.navigator.language.toLowerCase() || 'en'
+  localStorage.setItem('locale', language)
+  if (language.indexOf("zh") !== -1) {
+    window.location = 'zh.html'
+  } else if (language.indexOf('ja') !== -1) {
+    window.location = 'ja.html'
+  } else {
+    window.location = 'en.html'
+  }
+</script>
 
 </html>

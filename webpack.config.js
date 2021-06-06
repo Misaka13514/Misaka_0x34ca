@@ -63,6 +63,10 @@ module.exports = {
       filename: "index.html",
     }),
     new HtmlWebpackPlugin({
+      template: "en.html",
+      filename: "en.html",
+    }),
+    new HtmlWebpackPlugin({
       template: "zh.html",
       filename: "zh.html",
     }),
