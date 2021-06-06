@@ -57,3 +57,40 @@
   padding: 0 0.25em;
   transition-duration: 0.5s;
 }
+
+/*https://blog.csdn.net/xiaokui_wingfly/article/details/51852925*/
+
+.intro a {
+  position: relative;
+  line-height: 36px;
+  color: #006080;
+  text-decoration: none;
+}
+
+.intro a:hover {
+  color: #006080;
+}
+
+.intro a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #006080;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.intro a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(0.9999);
+  -o-transform: scaleX(0.9999);
+  transform: scaleX(0.9999);
+}
