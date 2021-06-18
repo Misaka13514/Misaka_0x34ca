@@ -7,6 +7,7 @@ on:
     paths-ignore:
       - "README.md"
       - "LICENSE"
+  workflow_dispatch:
 
 jobs:
   build:
@@ -15,6 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
+          submodules: True
           persist-credentials: false
 
       - name: Invoke Webpack build
