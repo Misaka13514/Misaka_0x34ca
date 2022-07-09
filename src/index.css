@@ -1,7 +1,5 @@
-@import "~@fortawesome/fontawesome-free/css/fontawesome.css";
-@import "~@fortawesome/fontawesome-free/css/brands.css";
-@import "~@fortawesome/fontawesome-free/css/regular.css";
-@import "~@fortawesome/fontawesome-free/css/solid.css";
+@import "~fork-fork-awesome/css/fork-awesome.min.css";
+@import "~fork-fork-awesome/css/v5-compat.min.css";
 @import "~unsemantic/assets/stylesheets/unsemantic-grid-responsive.css";
 
 @import "stylesheets/chem-elements.css";
