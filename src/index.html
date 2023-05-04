@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <link href="${require('./index.css')}" rel="stylesheet" />
@@ -7,11 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <title>About Misaka13514</title>
   <meta name="theme-color" content="#663399" />
-  <link rel="apple-touch-icon" sizes="180x180" href="https://blog.atri.tk/img/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="https://blog.atri.tk/img/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="https://blog.atri.tk/img/favicon-16x16.png" />
-  <link rel="mask-icon" href="https://blog.atri.tk/img/safari-pinned-tab.svg" color="#663399" />
-  <meta name="msapplication-config" content="https://blog.atri.tk/img/browserconfig.xml" />
+  <link rel="apple-touch-icon" sizes="180x180" href="${require('./assets/images/apple-touch-icon.png')}" />
+  <link rel="icon" type="image/png" sizes="32x32" href="${require('./assets/images/favicon-32x32.png')}" />
+  <link rel="icon" type="image/png" sizes="16x16" href="${require('./assets/images/favicon-16x16.png')}" />
+  <link rel="mask-icon" href="${require('./assets/images/safari-pinned-tab.svg')}" color="#663399" />
 </head>
 
 <body>
@@ -19,20 +18,25 @@
     <div class="section header grid-container grid-parent">
       <div class="label-group">
         <span class="header">choose a language</span>
-        <a href="zh.html">
+        <a href="zhs.html">
           <span class="label">
             <i aria-hidden="true" class="fas fa-language"></i>
-            中文
+            简体中文
           </span>
         </a>
-        <a href="en.html">
+        <a href="zht.html">
           <span class="label">
-            English
+            繁體中文
           </span>
         </a>
         <a href="ja.html">
           <span class="label">
             日本語
+          </span>
+        </a>
+        <a href="en.html">
+          <span class="label">
+            English
           </span>
         </a>
       </div>
@@ -56,6 +60,11 @@
               不同的页面可能会包含不同的内容。
             </p>
             <p>
+              請選擇語言。
+              頁面將在幾秒鐘內自動重定向。
+              不同的頁面可能會包含不同的內容。
+            </p>
+            <p>
               言語を選択してください。
               ページは数秒で自動的にリダイレクトされます。
               異なるページには異なるコンテンツが含まれている場合があります。
@@ -76,7 +85,7 @@
       <a class="hosting" href="https://atri.tk">
         <i aria-hidden="true" class="fas fa-heart"></i>
         Misaka13514's homepage
-        <span class="link">https://atri.tk</span>
+        <span class="link">//atri.tk</span>
       </a>
       <div class="copyright">
         <i aria-hidden="true" class="fas fa-exclamation-triangle"></i>
@@ -94,7 +103,11 @@
   var language = localStorage.getItem('locale') || window.navigator.language.toLowerCase() || 'en'
   localStorage.setItem('locale', language)
   if (language.indexOf("zh") !== -1) {
-    window.location = 'zh.html'
+    if (language.indexOf("cn") !== -1) {
+      window.location = 'zhs.html'
+    } else {
+      window.location = 'zht.html'
+    }
   } else if (language.indexOf('ja') !== -1) {
     window.location = 'ja.html'
   } else {

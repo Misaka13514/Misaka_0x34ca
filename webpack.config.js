@@ -67,12 +67,20 @@ module.exports = {
       filename: "en.html",
     }),
     new HtmlWebpackPlugin({
-      template: "zh.html",
-      filename: "zh.html",
+      template: "zhs.html",
+      filename: "zhs.html",
+    }),
+    new HtmlWebpackPlugin({
+      template: "zht.html",
+      filename: "zht.html",
     }),
     new HtmlWebpackPlugin({
       template: "ja.html",
       filename: "ja.html",
     }),
+    // new HtmlWebpackPlugin({
+    //   template: "eo.html",
+    //   filename: "eo.html",
+    // }),
   ],
 };
