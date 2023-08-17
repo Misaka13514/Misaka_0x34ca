@@ -26,3 +26,19 @@
 .hosting .link {
   color: #acd;
 }
+
+@media (prefers-color-scheme: dark) {
+  .copyright {
+    background: #1f1f1f;
+    color: #666;
+  }
+
+  .hosting {
+    background: #1f1f1f;
+    color: #888;
+  }
+
+  .hosting .link {
+    color: #78a;
+  }
+}

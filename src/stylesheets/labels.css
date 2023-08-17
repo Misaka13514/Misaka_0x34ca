@@ -44,3 +44,22 @@
   margin-right: 0.25em;
   vertical-align: -0.05em;
 }
+
+@media (prefers-color-scheme: dark) {
+  .label-group .header {
+    color: #ddd;
+  }
+
+  .label-group .header.alt {
+    color: #ddd;
+  }
+
+  .label-group .label {
+    background: #444;
+    color: #ddd;
+  }
+
+  .label-group .label:hover {
+    background: #555;
+  }
+}

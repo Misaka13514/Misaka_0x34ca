@@ -71,6 +71,21 @@ html {
   color: #333;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background: url(./assets/images/plus.svg) #121212;
+    background-size: 8em;
+  }
+
+  #container {
+    background: #1f1f1f;
+  }
+
+  .section.intro {
+    background: rgba(0, 0, 0, 0.95);
+  }
+}
+
 @media (max-width: 768px) {
   body {
     padding: 0;

@@ -70,3 +70,18 @@
 .section.header .picture-container {
   padding: 2em;
 }
+
+@media (prefers-color-scheme: dark) {
+  .section.header .name {
+    color: #bbb;
+  }
+
+  .section.header .name::after {
+    color: #666;
+  }
+
+  .section.header .picture {
+    background: #111;
+    border: 0.5em solid #111;
+  }
+}

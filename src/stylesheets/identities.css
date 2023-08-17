@@ -69,3 +69,30 @@ figure.identities ul li.shutdown a:hover .fake-link {
   color: #ddd;
   text-decoration-color: #c93756;
 }
+
+@media (prefers-color-scheme: dark) {
+  figure.identities {
+    border-bottom-color: rgba(255, 255, 255, 0.05);
+  }
+
+  figure.identities figcaption {
+    color: #999;
+  }
+
+  figure.identities ul li a {
+    color: #aaa;
+  }
+
+  figure.identities ul li a:hover {
+    background-color: rgba(0, 100, 120, 0.1);
+  }
+
+  figure.identities ul li a .fake-link {
+    color: #5295a3;
+  }
+
+  figure.identities ul li.shutdown a .label,
+  figure.identities ul li.shutdown a .fake-link {
+    text-decoration-color: #fa6161;
+  }
+}

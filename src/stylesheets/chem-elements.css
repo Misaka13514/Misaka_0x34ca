@@ -22,3 +22,13 @@
 .chem-element[data-element="calcium"]:hover {
   background: #faa3a3;
 }
+
+@media (prefers-color-scheme: dark) {
+  .chem-element {
+    color: #bbb;
+  }
+
+  .chem-element[data-element="calcium"]:hover {
+    background: #d66f6f;
+  }
+}
