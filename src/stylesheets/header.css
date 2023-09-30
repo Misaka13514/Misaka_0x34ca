@@ -9,6 +9,10 @@
   }
 }
 
+.section.header .label-group a {
+  text-decoration: none;
+}
+
 .section.header .split {
   padding: 0 1em;
 }
@@ -81,7 +85,7 @@
   }
 
   .section.header .picture {
-    background: #111;
-    border: 0.5em solid #111;
+    background: #333;
+    border: 0.5em solid #333;
   }
 }
