@@ -14,7 +14,7 @@
   margin: 0;
 }
 
-.intro h2 i.fa {
+.intro h2 i.mdi {
   margin: 0.25em;
   text-align: center;
   width: 1em;
@@ -43,7 +43,7 @@
   padding: 0 0.25em;
 }
 
-.intro .label-group .header.alt .fa-tag {
+.intro .label-group .header.alt .mdi-tag {
   font-size: 1.21em;
   margin-right: 0.5ch;
   text-align: center;
@@ -113,7 +113,7 @@
     color: #999;
   }
 
-  .intro .label-group .header.alt .fa-tag {
+  .intro .label-group .header.alt .mdi-tag {
     color: #aaa;
   }
 
