@@ -2,25 +2,24 @@
 <html lang="zh-TW">
 
 <head>
-  <link href="${require('./index.css')}" rel="stylesheet" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <title>關於Misaka13514</title>
+  <title>關於 Misaka13514</title>
   <meta name="theme-color" content="#663399" />
-  <link rel="apple-touch-icon" sizes="180x180" href="${require('./assets/images/apple-touch-icon.png')}" />
-  <link rel="icon" type="image/png" sizes="32x32" href="${require('./assets/images/favicon-32x32.png')}" />
-  <link rel="icon" type="image/png" sizes="16x16" href="${require('./assets/images/favicon-16x16.png')}" />
-  <link rel="mask-icon" href="${require('./assets/images/safari-pinned-tab.svg')}" color="#663399" />
+  <link rel="apple-touch-icon" sizes="180x180" href="<%= require('./assets/images/apple-touch-icon.png') %>" />
+  <link rel="icon" type="image/png" sizes="32x32" href="<%= require('./assets/images/favicon-32x32.png') %>" />
+  <link rel="icon" type="image/png" sizes="16x16" href="<%= require('./assets/images/favicon-16x16.png') %>" />
+  <link rel="mask-icon" href="<%= require('./assets/images/safari-pinned-tab.svg') %>" color="#663399" />
 </head>
 
 <body>
   <div id="container">
     <div class="section header grid-container grid-parent">
       <div class="split picture-container grid-40">
-        <a href="${require('./assets/images/Misaka.png')}">
+        <a href="<%= require('./assets/images/Misaka.png') %>">
           <picture class="picture">
-            <source type="image/webp" srcset="${require('./assets/images/Misaka@1x.webp')}" />
-            <img src="${require('./assets/images/Misaka@1x.jpg')}" />
+            <source type="image/webp" srcset="<%= require('./assets/images/Misaka@1x.webp') %>" />
+            <img src="<%= require('./assets/images/Misaka@1x.jpg') %>" />
           </picture>
         </a>
       </div>
@@ -38,24 +37,24 @@
         <div class="label-group">
           <span class="header">語言</span>
           <a href="zht.html">
-            <span class="label" title="這位用戶的母語是漢語。">
+            <span class="label" title="我的母語是漢語。">
               <i aria-hidden="true" class="mdi mdi-translate"></i>
               🇹🇼
-              <strong>繁體中文</strong>
+              <strong>正體中文</strong>
             </span>
           </a>
           <a href="zhs.html">
-            <span class="label" title="這位用戶的母語是漢語。">
+            <span class="label" title="我的母語是漢語。">
               🇨🇳
             </span>
           </a>
           <a href="ja.html">
-            <span class="label" title="這位用戶能以熟練的日語進行交流。">
+            <span class="label" title="我能以熟練的日文進行交流。">
               🇯🇵
             </span>
           </a>
           <a href="en.html">
-            <span class="label" title="這位用戶能以熟練的英語進行交流。">
+            <span class="label" title="我能以熟練的英文進行交流。">
               🇺🇸
             </span>
           </a>
@@ -64,22 +63,12 @@
         <div class="label-group">
           <span class="header">所在地</span>
           <a href="https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E5%B8%82">
-            <span class="label" title="這位用戶居住在上海市。">
+            <span class="label" title="我居住在上海市。">
               <i aria-hidden="true" class="mdi mdi-map-marker"></i>
               上海市
             </span>
           </a>
         </div>
-
-        <!-- <div class="label-group">
-          <span class="header">組織</span>
-          <a href="https://zh.wikipedia.org/wiki/%E5%A6%B9%E5%A6%B9%E5%80%91">
-            <span class="label" title="這個御坂通過AIM擴散力場連接到御坂網路。">
-              <i aria-hidden="true" class="mdi mdi-account-group"></i>
-              御坂網路
-            </span>
-          </a>
-        </div> -->
 
         <div class="label-group">
           <span class="header">MBTI</span>
@@ -104,7 +93,7 @@
         <div class="label-group">
           <span class="header">網路管理中心運營者</span>
           <a href="https://blog.apeiria.net/dn42-peering/">
-            <span class="label" title="在 去中心化網路42 中與我構建對等連接！">
+            <span class="label" title="在去中心化網路 42 中與我構建對等連接！">
               <i aria-hidden="true" class="mdi mdi-lan"></i>
               AS4242421032
             </span>
@@ -119,7 +108,6 @@
               fish
             </span>
           </a>
-          <!-- <span class="label">zsh</span> -->
         </div>
 
         <div class="label-group">
@@ -152,10 +140,12 @@
           <span class="label">
             <i aria-hidden="true" class="mdi mdi-language-c"></i>
           </span>
-          <span class="label">
-            <i aria-hidden="true" class="mdi mdi-language-cpp"></i>
-          </span>
-          <a href="https://www.javascript.com">
+          <a href="https://www.stroustrup.com/C++.html">
+            <span class="label">
+              <i aria-hidden="true" class="mdi mdi-language-cpp"></i>
+            </span>
+          </a>
+          <a href="https://developer.mozilla.org/zh-TW/docs/Web/JavaScript">
             <span class="label">
               <i aria-hidden="true" class="mdi mdi-language-javascript"></i>
             </span>
@@ -170,49 +160,35 @@
         <div class="label-group">
           <span class="header">作業系統平臺</span>
           <a href="https://www.archlinuxcn.org">
-            <span class="label" title="這位用戶在筆記本電腦和伺服器上使用 Arch Linux。">
+            <span class="label" title="我在筆記本電腦和伺服器上使用 Arch Linux。">
               <i aria-hidden="true" class="mdi mdi-arch"></i>
-              Linux 6.8
+              Linux 6.9
             </span>
           </a>
           <a href="https://pve.proxmox.com">
-            <span class="label" title="這位用戶在家用伺服器上使用 Proxmox VE。">
+            <span class="label" title="我在家用伺服器上使用 Proxmox VE。">
               <i aria-hidden="true" class="mdi mdi-debian"></i>
               Proxmox VE
             </span>
           </a>
           <a href="https://www.synology.com/zh-tw/dsm">
-            <span class="label" title="這位用戶在網路附屬存儲設備上使用 DiskStation Manager。">
+            <span class="label" title="我在網絡附屬存儲設備上使用 DiskStation Manager。">
               <i aria-hidden="true" class="mdi mdi-nas"></i>
               DSM
             </span>
           </a>
           <a href="https://github.com/immortalwrt/immortalwrt">
-            <span class="label" title="這位用戶在路由器上使用 ImmortalWrt。">
+            <span class="label" title="我在路由器上使用 ImmortalWrt。">
               <i aria-hidden="true" class="mdi mdi-router"></i>
               ImmortalWrt
             </span>
           </a>
           <a href="https://www.android.com/intl/zh-TW_tw/android-14/">
-            <span class="label" title="這位用戶使用 Android 14。">
+            <span class="label" title="我使用 Android 14。">
               <i aria-hidden="true" class="mdi mdi-android"></i>
               14
             </span>
           </a>
-          <!-- <a href="https://www.microsoft.com/zh-tw/windows/windows-11">
-            <span class="label" title="這位用戶使用 Windows 11。">
-              <i aria-hidden="true" class="mdi mdi-microsoft-windows"></i>
-              11
-            </span>
-          </a> -->
-          <!-- <a href="https://www.apple.com/tw/macos/">
-            <span class="label" title="這位用戶現在不使用 macOS。">
-              <del>
-                <i aria-hidden="true" class="mdi mdi-apple"></i>
-                macOS
-              </del>
-            </span>
-          </a> -->
         </div>
       </div>
     </div>
@@ -228,16 +204,20 @@
               href="https://zh.wikipedia.org/wiki/%E9%9B%BB%E6%A9%9F%E5%B7%A5%E7%A8%8B%E5%AD%B8">電氣工程（EE）</a>。<br />
           </p>
           <p>
-            我是一個熟悉計算機與電子技術的技術宅。因爲我們無法區分任何一項足夠先進的技術和魔法，所以我也在努力成爲一名魔法少女 2333。<br />
+            我是一個熟悉計算機與電子科技的科技宅。因爲我們無法區分任何一項足夠先進的科技和魔法，所以我也在努力成爲一名魔法少女 2333。<br />
           </p>
           <p>
-            我正在學習日語，儘管實際水平不是很好，我也沒有信心，但我已通過<a href="https://www.jlpt.jp/tw/about/index.html">日本語能力測試（JLPT）</a> N1。<br />
+            我在 <a
+              href="https://wiki.archlinuxcn.org/wiki/Arch_%E7%94%A8%E6%88%B7%E8%BD%AF%E4%BB%B6%E4%BB%93%E5%BA%93_(AUR)">Arch
+              使用者軟體倉庫</a>中擔任一名軟體包維護者。我也維護過 <a href="https://github.com/Homebrew/homebrew-cask">Homebrew</a> 和 <a
+              href="https://github.com/NixOS/nixpkgs">Nixpkgs</a> 中的一部分軟體包。<br />
           </p>
           <p>
-            我正在學習繁體中文，如果你發現我寫的中文有錯誤，請告訴我。<br />
+            我正在學習日文，儘管我的口語和寫作能力有待提高，我已成功通過了<a href="https://www.jlpt.jp/tw/about/index.html">日本語能力試驗（JLPT）</a> N1。<br />
+            我正在學習正體中文，如果你發現我寫的中文有錯誤，請告訴我。<br />
           </p>
           <p>
-            希望多交一些朋友，如果你覺得我們之間的關係不錯，可以來申請交換<a href="https://blog.apeiria.net/links/">友鏈</a>。<br />
+            我希望多交一些朋友，如果你覺得我們之間的關係不錯，歡迎提出交換<a href="https://blog.apeiria.net/links/">友站連結</a>的申請。<br />
           </p>
         </div>
 
@@ -272,14 +252,14 @@
               <li>
                 <a href="https://twitter.com/Misaka_0x34ca">
                   <i aria-hidden="true" class="mdi mdi-twitter"></i>
-                  <span class="label">推特（日語）</span>
+                  <span class="label">推特（日文）</span>
                   <span class="fake-link">Misaka_0x34ca</span>
                 </a>
               </li>
               <li>
                 <a href="https://twitter.com/Misaka13514">
                   <i aria-hidden="true" class="mdi mdi-twitter"></i>
-                  <span class="label">推特（英語）</span>
+                  <span class="label">推特（英文）</span>
                   <span class="fake-link">Misaka13514</span>
                 </a>
               </li>
@@ -295,6 +275,13 @@
                   <i aria-hidden="true" class="mdi mdi-discord"></i>
                   <span class="label">Discord</span>
                   <span class="fake-link">misaka_0x34ca</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://line.me/ti/p/dttJI673kw">
+                  <i aria-hidden="true" class="mdi mdi-message"></i>
+                  <span class="label">LINE</span>
+                  <span class="fake-link">Misaka_0x34ca</span>
                 </a>
               </li>
               <li>
@@ -319,63 +306,58 @@
 
     <div class="section intro">
       <div class="block grid-container grid-parent">
-        <h2><i aria-hidden="true" class="mdi mdi-chevron-right"></i>技術</h2>
+        <h2><i aria-hidden="true" class="mdi mdi-chevron-right"></i>科技</h2>
 
         <div class="split grid-50 mobile-grid-100">
           <p>
-            我學習了很多技術，但並不精通。<br />
-            我正在運營我自己的互聯網自治系統。<br />
-            我有<a
-              href="https://zh.wikipedia.org/wiki/%E5%A5%AA%E6%97%97_(%E7%B6%B2%E8%B7%AF%E5%AE%89%E5%85%A8)">奪旗賽</a>的經驗，但我完全不知道如何在<a
-              href="https://zh.wikipedia.org/wiki/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B">算法競賽</a>中編寫算法。<br />
-            我持有中國無線電協會業餘電臺B類操作證書，可以在所有業餘無線電頻率上發射和接收。<br />
+            我學習了很多科技，但精通的並不多。我沒有固定的學習的方向，只專注於我認爲有必要掌握的知識。<br />
+          </p>
+          <p>
+            我具有<a
+              href="https://zh.wikipedia.org/wiki/%E5%A5%AA%E6%97%97_(%E7%B6%B2%E8%B7%AF%E5%AE%89%E5%85%A8)">奪旗賽（CTF）</a>的經驗，但我並不擅長在<a
+              href="https://zh.wikipedia.org/wiki/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B">算法競賽</a>中編寫算法。相對於編寫全新的程序，我更擅長找到他人的解決方案並嘗試運行、維護和優化。<br />
+          </p>
+          <p>
+            我持有中國無線電協會業餘無線電分會（CRAC）頒發的
+            <a
+              href="https://zh.wikipedia.org/wiki/%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E4%B8%9A%E4%BD%99%E6%97%A0%E7%BA%BF%E7%94%B5%E6%89%A7%E7%85%A7%E5%88%B6%E5%BA%A6">C
+              類業餘電台操作證書</a>。然而，由於時間及經濟條件的限制，我還沒有積累充足的實踐經驗。<br />
           </p>
         </div>
 
         <div class="split grid-50 mobile-grid-100">
           <p>
-            我沒有學習的方向，僅在需要的時候纔開始學習。<br />
+            我喜歡維護 Linux 系統和相關的軟體包。在我的 AUR 上有大約 40 個軟體包，其中包括 Gqrx、EasyEDA、FreeRouting 等較受歡迎的軟體。我夢想着成爲 Arch Linux
+            官方團隊的一員。<br />
           </p>
-          <div class="label-group">
-            <span class="header alt"><i aria-hidden="true" class="mdi mdi-tag"></i>有經驗的事物</span>
-
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-linux"></i>
-              Linux
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-language-python"></i>
-              Python
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-laptop"></i>
-              Arduino
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-lan"></i>
-              計算機網路
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-lock"></i>
-              網路安全
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-radio-tower"></i>
-              業餘無線電
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-wrench"></i>
-              電子DIY製作
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-lightning-bolt"></i>
-              電磁加速
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-server"></i>
-              <s>全棧開發</s>
-            </span>
-          </div>
+          <figure class="identities">
+            <figcaption>
+              <i class="mdi mdi-open-in-new"></i>AUR
+            </figcaption>
+            <ul>
+              <li>
+                <a href="https://github.com/Misaka13514-AUR/PKGBUILDs">
+                  <i aria-hidden="true" class="mdi mdi-source-repository"></i>
+                  <span class="label">PKGBUILD</span>
+                  <span class="fake-link">Misaka13514-AUR/PKGBUILDs</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://aur.archlinux.org/account/Misaka13514">
+                  <i aria-hidden="true" class="mdi mdi-arch"></i>
+                  <span class="label">AUR</span>
+                  <span class="fake-link">Misaka13514</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://repo.apeiria.net">
+                  <i aria-hidden="true" class="mdi mdi-server"></i>
+                  <span class="label">我的 Arch Linux 倉庫</span>
+                  <span class="fake-link">repo.apeiria.net</span>
+                </a>
+              </li>
+            </ul>
+          </figure>
         </div>
       </div>
     </div>
@@ -387,56 +369,95 @@
         <div class="split grid-50 mobile-grid-100">
           <p>
             我熱衷於<a href="https://drive.apeiria.net/Illustration/">可愛的插圖</a>、galgame 和動畫。<br />
-            ACGN是我生活中不可或缺的一部分。<br />
+            ACGN 是我生活中不可或缺的一部分。<br />
             你可以在 <a href="https://bgm.tv/user/misaka_0x34ca">Bangumi</a> 上看到我的 ACGN 生活記錄。<br />
           </p>
           <p>
             我更喜歡購買具有性價比並提供更多自由度的設備。<br />
           </p>
           <p>
-            我也對各種電子設備感興趣，例如業餘無線電臺和計算器。<br />
+            我也對各種電子設備感興趣，例如業餘無線電台和計算器。<br />
           </p>
         </div>
 
         <div class="split grid-50 mobile-grid-100">
           <div class="label-group">
-            <span class="header alt"><i aria-hidden="true" class="mdi mdi-tag"></i>設備</span>
+            <span class="header alt"><i aria-hidden="true" class="mdi mdi-devices"></i> 設備</span>
 
             <a href="https://wiki.archlinux.org/title/Intel_NUC_X15">
-              <span class="label">英特爾 NUC X15 (LAPKC71F)</span>
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-laptop"></i>
+                英特爾 NUC X15 (LAPKC71F)
+              </span>
             </a>
             <a href="https://blog.apeiria.net/2023/build-my-homelab/">
-              <span class="label">惠普 EliteDesk 800 G4 TWR</span>
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-desktop-tower"></i>
+                惠普 EliteDesk 800 G4 TWR
+              </span>
             </a>
             <a href="https://evolution-x.org/device/raphael">
-              <span class="label">紅米 K20 Pro (raphael)</span>
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-cellphone"></i>
+                紅米 K20 Pro (raphael)
+              </span>
             </a>
             <a href="https://openwrt.org/toh/friendlyarm/nanopi_r2s">
-              <span class="label">FriendlyARM NanoPi R2S</span>
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-router"></i>
+                友善之臂 NanoPi R2S
+              </span>
             </a>
+            <a href="https://blog.apeiria.net/2020/ax3600-ssh-clash/">
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-access-point"></i>
+                小米 AX3600
+              </span>
+            </a>
+            <span class="label">
+              <i aria-hidden="true" class="mdi mdi-printer"></i>
+              惠普 Deskjet 2540
+            </span>
           </div>
 
           <div class="label-group">
-            <span class="header alt"><i aria-hidden="true" class="mdi mdi-tag"></i>業餘無線電臺</span>
+            <span class="header alt"><i aria-hidden="true" class="mdi mdi-radio"></i> 業餘無線電台</span>
 
             <a href="https://github.com/LibreDMR/OpenGD77_UserGuide">
-              <span class="label">寶鋒 DM-5R V3 2018 Tier II</span>
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-radio-handheld"></i>
+                寶鋒 DM-5R V3 2018 Tier II
+              </span>
             </a>
             <a href="https://www.rtl-sdr.com">
-              <span class="label">RTL-SDR Blog V3</span>
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-radio-tower"></i>
+                RTL-SDR Blog V3
+              </span>
             </a>
-            <span class="label"><s>WebSDR</s></span>
           </div>
 
           <div class="label-group">
-            <span class="header alt"><i aria-hidden="true" class="mdi mdi-tag"></i>計算機</span>
+            <span class="header alt"><i aria-hidden="true" class="mdi mdi-calculator"></i> 計算器</span>
 
-            <span class="label">卡西歐 fx-JP900 (CY-243 VerF)</span>
-            <span class="label">卡西歐 fx-991CN X (CY-239 VerC)</span>
-            <span class="label">佳能 F-792SGA [由 F-789SGA 升級]</span>
-            <span class="label">惠普 48gII [由 39gs 升級]</span>
-            <span class="label"><s>惠普 39gII</s></span>
-            <span class="label"><s>惠普 Prime</s></span>
+            <a href="https://blog.apeiria.net/2020/hp39gs-upgrade/">
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-sine-wave"></i>
+                惠普 48gII [由 39gs 升級]
+              </span>
+            </a>
+            <span class="label">
+              <i aria-hidden="true" class="mdi mdi-math-integral"></i>
+              佳能 F-792SGA [由 F-789SGA 升級]
+            </span>
+            <span class="label">
+              <i aria-hidden="true" class="mdi mdi-table"></i>
+              卡西歐 fx-JP900 (CY-243 VerF)
+            </span>
+            <span class="label">
+              <i aria-hidden="true" class="mdi mdi-function-variant"></i>
+              卡西歐 fx-991CN X (CY-239 VerC)
+            </span>
           </div>
         </div>
       </div>
@@ -447,9 +468,6 @@
         <i aria-hidden="true" class="mdi mdi-source-fork"></i>
         復刻自 atomicneko。由 Misaka13514 修改。
       </a>
-    </div>
-
-    <div class="section footer shadow">
       <a class="hosting" href="https://apeiria.net">
         <i aria-hidden="true" class="mdi mdi-heart"></i>
         Misaka13514 的主頁
@@ -461,10 +479,6 @@
       </div>
     </div>
   </div>
-  <!-- Cloudflare Web Analytics -->
-  <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-    data-cf-beacon='{"token": "61fdef9df0224e89b3e67b20f2436261"}'></script>
-  <!-- End Cloudflare Web Analytics -->
 </body>
 
 </html>

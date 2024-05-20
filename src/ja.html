@@ -2,25 +2,24 @@
 <html lang="ja">
 
 <head>
-  <link href="${require('./index.css')}" rel="stylesheet" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <title>御坂13514号について</title>
   <meta name="theme-color" content="#663399" />
-  <link rel="apple-touch-icon" sizes="180x180" href="${require('./assets/images/apple-touch-icon.png')}" />
-  <link rel="icon" type="image/png" sizes="32x32" href="${require('./assets/images/favicon-32x32.png')}" />
-  <link rel="icon" type="image/png" sizes="16x16" href="${require('./assets/images/favicon-16x16.png')}" />
-  <link rel="mask-icon" href="${require('./assets/images/safari-pinned-tab.svg')}" color="#663399" />
+  <link rel="apple-touch-icon" sizes="180x180" href="<%= require('./assets/images/apple-touch-icon.png') %>" />
+  <link rel="icon" type="image/png" sizes="32x32" href="<%= require('./assets/images/favicon-32x32.png') %>" />
+  <link rel="icon" type="image/png" sizes="16x16" href="<%= require('./assets/images/favicon-16x16.png') %>" />
+  <link rel="mask-icon" href="<%= require('./assets/images/safari-pinned-tab.svg') %>" color="#663399" />
 </head>
 
 <body>
   <div id="container">
     <div class="section header grid-container grid-parent">
       <div class="split picture-container grid-40">
-        <a href="${require('./assets/images/Misaka.png')}">
+        <a href="<%= require('./assets/images/Misaka.png') %>">
           <picture class="picture">
-            <source type="image/webp" srcset="${require('./assets/images/Misaka@1x.webp')}" />
-            <img src="${require('./assets/images/Misaka@1x.jpg')}" />
+            <source type="image/webp" srcset="<%= require('./assets/images/Misaka@1x.webp') %>" />
+            <img src="<%= require('./assets/images/Misaka@1x.jpg') %>" />
           </picture>
         </a>
       </div>
@@ -39,24 +38,24 @@
         <div class="label-group">
           <span class="header">言語</span>
           <a href="ja.html">
-            <span class="label" title="この利用者は高度なレベルの日本語を理解します。">
+            <span class="label" title="高度なレベルの日本語を理解します。">
               <i aria-hidden="true" class="mdi mdi-translate"></i>
               🇯🇵
               <strong>日本語</strong>
             </span>
           </a>
           <a href="zhs.html">
-            <span class="label" title="この利用者は中国語を母語としています。">
+            <span class="label" title="中国語を母語としています。">
               🇨🇳
             </span>
           </a>
           <a href="zht.html">
-            <span class="label" title="この利用者は中国語を母語としています。">
+            <span class="label" title="中国語を母語としています。">
               🇹🇼
             </span>
           </a>
           <a href="en.html">
-            <span class="label" title="この利用者は高度なレベルの英語を理解します。">
+            <span class="label" title="高度なレベルの英語を理解します。">
               🇺🇸
             </span>
           </a>
@@ -65,22 +64,12 @@
         <div class="label-group">
           <span class="header">現在地</span>
           <a href="https://ja.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E5%B8%82">
-            <span class="label" title="この利用者は上海に住んでいます。">
+            <span class="label" title="上海に住んでいます。">
               <i aria-hidden="true" class="mdi mdi-map-marker"></i>
               上海市
             </span>
           </a>
         </div>
-
-        <!-- <div class="label-group">
-          <span class="header">組織</span>
-          <a href="https://ja.wikipedia.org/wiki/%E5%A6%B9%E9%81%94">
-            <span class="label" title="この御坂はAIM拡散力場を介してミサカネットワークに接続されています。">
-              <i aria-hidden="true" class="mdi mdi-account-group"></i>
-              ミサカネットワーク
-            </span>
-          </a>
-        </div> -->
 
         <div class="label-group">
           <span class="header">MBTI</span>
@@ -120,7 +109,6 @@
               fish
             </span>
           </a>
-          <!-- <span class="label">zsh</span> -->
         </div>
 
         <div class="label-group">
@@ -153,10 +141,12 @@
           <span class="label">
             <i aria-hidden="true" class="mdi mdi-language-c"></i>
           </span>
-          <span class="label">
-            <i aria-hidden="true" class="mdi mdi-language-cpp"></i>
-          </span>
-          <a href="https://www.javascript.com">
+          <a href="https://www.stroustrup.com/C++.html">
+            <span class="label">
+              <i aria-hidden="true" class="mdi mdi-language-cpp"></i>
+            </span>
+          </a>
+          <a href="https://developer.mozilla.org/ja/docs/Web/JavaScript">
             <span class="label">
               <i aria-hidden="true" class="mdi mdi-language-javascript"></i>
             </span>
@@ -171,49 +161,35 @@
         <div class="label-group">
           <span class="header">プラットフォーム</span>
           <a href="https://www.archlinux.jp">
-            <span class="label" title="この利用者はノートパソコンとサーバーで Arch Linux を使用しています。">
+            <span class="label" title="ノートパソコンとサーバーで Arch Linux を使用しています。">
               <i aria-hidden="true" class="mdi mdi-arch"></i>
-              Linux 6.8
+              Linux 6.9
             </span>
           </a>
           <a href="https://pve.proxmox.com">
-            <span class="label" title="この利用者はホームサーバーで Proxmox VE を使用しています。">
+            <span class="label" title="ホームサーバーで Proxmox VE を使用しています。">
               <i aria-hidden="true" class="mdi mdi-debian"></i>
               Proxmox VE
             </span>
           </a>
           <a href="https://www.synology.com/ja-jp/dsm">
-            <span class="label" title="この利用者はネットワーク接続ストレージで Synology DiskStation Manager を使用しています。">
+            <span class="label" title="ネットワーク接続ストレージで Synology DiskStation Manager を使用しています。">
               <i aria-hidden="true" class="mdi mdi-nas"></i>
               DSM
             </span>
           </a>
           <a href="https://github.com/immortalwrt/immortalwrt">
-            <span class="label" title="この利用者はルーターで ImmortalWrt を使用しています。">
+            <span class="label" title="ルーターで ImmortalWrt を使用しています。">
               <i aria-hidden="true" class="mdi mdi-router"></i>
               ImmortalWrt
             </span>
           </a>
           <a href="https://www.android.com/intl/ja_jp/android-14/">
-            <span class="label" title="この利用者は Android 14 を使用しています。">
+            <span class="label" title=" Android 14 を使用しています。">
               <i aria-hidden="true" class="mdi mdi-android"></i>
               14
             </span>
           </a>
-          <!-- <a href="https://www.microsoft.com/ja-jp/windows/windows-11">
-            <span class="label" title="この利用者は Windows 11 を使用しています。">
-              <i aria-hidden="true" class="mdi mdi-microsoft-windows"></i>
-              11
-            </span>
-          </a> -->
-          <!-- <a href="https://www.apple.com/jp/macos/">
-            <span class="label" title="この利用者はいま macOS を使用していません。">
-              <del>
-                <i aria-hidden="true" class="mdi mdi-apple"></i>
-                macOS
-              </del>
-            </span>
-          </a> -->
         </div>
       </div>
     </div>
@@ -232,8 +208,14 @@
             コンピューターや電子技術に精通した技術オタクです。十分に発達した科学技術は魔法と見分けが付かないので、魔法少女になろうとしていますwwww。<br />
           </p>
           <p>
+            <a
+              href="https://wiki.archlinux.jp/index.php/Arch_User_Repository">Archユーザーリポジトリ</a>でパッケージメンテナとして働いています。また、<a
+              href="https://github.com/Homebrew/homebrew-cask">Homebrew</a>と<a
+              href="https://github.com/NixOS/nixpkgs">Nixpkgs</a>でいくつかのパッケージもメンテしています。<br />
+          </p>
+          <p>
             日本語を勉強していますが、拙い日本語で申し訳ありません。もしなにか文法上の間違いがあったら、ぜひご指摘お願い申し上げます。<br />
-            実際のレベルはあまり良くなく、自信もありませんが、<a href="https://www.jlpt.jp/about/index.html">日本語能力試験（JLPT）</a>N1に合格しました。<br />
+            口語力や作文力はあまり上手ではありませんが、<a href="https://www.jlpt.jp/about/index.html">日本語能力試験（JLPT）</a>N1に合格しました。<br />
             日本には3回行ったことがあり、日本に留学することが夢です。<br />
           </p>
           <p>
@@ -263,10 +245,24 @@
             </figcaption>
             <ul>
               <li>
+                <a href="https://t.me/Misaka_0x34ca">
+                  <i aria-hidden="true" class="mdi mdi-telegram"></i>
+                  <span class="label">テレグラム</span>
+                  <span class="fake-link">Misaka_0x34ca</span>
+                </a>
+              </li>
+              <li>
                 <a href="https://twitter.com/Misaka_0x34ca">
                   <i aria-hidden="true" class="mdi mdi-twitter"></i>
-                  <span class="label">ツイッター</span>
+                  <span class="label">ツイッター（日本語）</span>
                   <span class="fake-link">Misaka_0x34ca</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Misaka13514">
+                  <i aria-hidden="true" class="mdi mdi-twitter"></i>
+                  <span class="label">ツイッター（英語）</span>
+                  <span class="fake-link">Misaka13514</span>
                 </a>
               </li>
               <li>
@@ -277,13 +273,6 @@
                 </a>
               </li>
               <li>
-                <a href="https://line.me/ti/p/dttJI673kw">
-                  <i aria-hidden="true" class="mdi mdi-message"></i>
-                  <span class="label">LINE</span>
-                  <span class="fake-link">Misaka_0x34ca</span>
-                </a>
-              </li>
-              <li>
                 <a href="https://discordapp.com/users/653251849260105728">
                   <i aria-hidden="true" class="mdi mdi-discord"></i>
                   <span class="label">Discord</span>
@@ -291,9 +280,9 @@
                 </a>
               </li>
               <li>
-                <a href="https://t.me/Misaka_0x34ca">
-                  <i aria-hidden="true" class="mdi mdi-telegram"></i>
-                  <span class="label">テレグラム</span>
+                <a href="https://line.me/ti/p/dttJI673kw">
+                  <i aria-hidden="true" class="mdi mdi-message"></i>
+                  <span class="label">LINE</span>
                   <span class="fake-link">Misaka_0x34ca</span>
                 </a>
               </li>
@@ -323,59 +312,53 @@
 
         <div class="split grid-50 mobile-grid-100">
           <p>
-            多くの技術を学びましたが、上手ではありません。<br />
-            独自のインターネット自律システムを運用しています。<br />
+            多くの技術を学びましたが、精通しているものはあまり多くありません。特定の学習方向はなく、自分が必要だと思う知識にだけ集中しています。<br />
+          </p>
+          <p>
             <a
-              href="https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%82%B6%E3%83%BB%E3%83%95%E3%83%A9%E3%83%83%E3%82%B0#%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3">キャプチャー・ザ・フラッグ</a>の経験はありますが、<a
-              href="https://ja.wikipedia.org/wiki/%E7%AB%B6%E6%8A%80%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0">競技プログラミング</a>のアルゴリズムの書き方が全然わかりません。<br />
-            中国無線協会からB級アマチュア無線運用ライセンスを取得しており、すべてのアマチュア無線周波数で送受信できます。<br />
+              href="https://ja.wikipedia.org/wiki/%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%83%BC%E3%83%BB%E3%82%B6%E3%83%BB%E3%83%95%E3%83%A9%E3%83%83%E3%82%B0#%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3">
+              キャプチャー・ザ・フラッグ（CTF）</a>の経験がありますが、<a
+              href="https://ja.wikipedia.org/wiki/%E7%AB%B6%E6%8A%80%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0">競技プログラミング</a>のアルゴリズムを書くのは苦手です。新しいプログラムを書くよりも、他人の解決策を見つけてそれを実行、維持、最適化するほうが得意です。<br />
+          </p>
+          <p>
+            中国アマチュア無線クラブ（CRAC）から発行された<a
+              href="https://en.wikipedia.org/wiki/Amateur_radio_licensing_in_China">アマチュア無線技士のC級免許</a>を持っています。しかし、時間と経済的な制約のため、十分な実践経験はまだ積んでいません。<br />
           </p>
         </div>
 
         <div class="split grid-50 mobile-grid-100">
           <p>
-            学習の方向性がなく、必要なときにだけ学習を開始します。<br />
+            Linuxシステムと関連ソフトウェアパッケージのメンテナンスを楽しんでいます。私のAURには約40個のパッケージがあり、その中にはGqrx、EasyEDA、FreeRoutingなどの人気ソフトウェアが含まれています。私はArch
+            Linuxの公式チームの一員になることを夢見ています。<br />
           </p>
-          <div class="label-group">
-            <span class="header alt"><i aria-hidden="true" class="mdi mdi-tag"></i>経験したこと</span>
-
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-linux"></i>
-              Linux
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-language-python"></i>
-              Python
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-laptop"></i>
-              Arduino
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-lan"></i>
-              コンピューターネットワーク
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-lock"></i>
-              サイバーセキュリティ
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-radio-tower"></i>
-              アマチュア無線
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-wrench"></i>
-              電子DIY制作
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-lightning-bolt"></i>
-              電磁加速
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-server"></i>
-              <s>フルスタック開発</s>
-            </span>
-          </div>
+          <figure class="identities">
+            <figcaption>
+              <i class="mdi mdi-open-in-new"></i>AUR
+            </figcaption>
+            <ul>
+              <li>
+                <a href="https://github.com/Misaka13514-AUR/PKGBUILDs">
+                  <i aria-hidden="true" class="mdi mdi-source-repository"></i>
+                  <span class="label">PKGBUILD</span>
+                  <span class="fake-link">Misaka13514-AUR/PKGBUILDs</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://aur.archlinux.org/account/Misaka13514">
+                  <i aria-hidden="true" class="mdi mdi-arch"></i>
+                  <span class="label">AUR</span>
+                  <span class="fake-link">Misaka13514</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://repo.apeiria.net">
+                  <i aria-hidden="true" class="mdi mdi-server"></i>
+                  <span class="label">私の Arch Linux リポジトリ</span>
+                  <span class="fake-link">repo.apeiria.net</span>
+                </a>
+              </li>
+            </ul>
+          </figure>
         </div>
       </div>
     </div>
@@ -400,43 +383,82 @@
 
         <div class="split grid-50 mobile-grid-100">
           <div class="label-group">
-            <span class="header alt"><i aria-hidden="true" class="mdi mdi-tag"></i>デバイス</span>
+            <span class="header alt"><i aria-hidden="true" class="mdi mdi-devices"></i> デバイス</span>
 
             <a href="https://wiki.archlinux.org/title/Intel_NUC_X15">
-              <span class="label">インテル NUC X15 (LAPKC71F)</span>
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-laptop"></i>
+                インテル NUC X15 (LAPKC71F)
+              </span>
             </a>
             <a href="https://blog.apeiria.net/2023/build-my-homelab/">
-              <span class="label">HP EliteDesk 800 G4 TWR</span>
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-desktop-tower"></i>
+                HP EliteDesk 800 G4 TWR
+              </span>
             </a>
             <a href="https://evolution-x.org/device/raphael">
-              <span class="label">Xiaomi Mi 9T Pro (raphael)</span>
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-cellphone"></i>
+                Xiaomi Mi 9T Pro (raphael)
+              </span>
             </a>
             <a href="https://openwrt.org/toh/friendlyarm/nanopi_r2s">
-              <span class="label">FriendlyARM NanoPi R2S</span>
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-router"></i>
+                FriendlyARM NanoPi R2S
+              </span>
             </a>
+            <a href="https://blog.apeiria.net/2020/ax3600-ssh-clash/">
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-access-point"></i>
+                小米 AX3600
+              </span>
+            </a>
+            <span class="label">
+              <i aria-hidden="true" class="mdi mdi-printer"></i>
+              惠普 Deskjet 2540
+            </span>
           </div>
 
           <div class="label-group">
-            <span class="header alt"><i aria-hidden="true" class="mdi mdi-tag"></i>アマチュア無線機</span>
+            <span class="header alt"><i aria-hidden="true" class="mdi mdi-radio"></i> アマチュア無線機</span>
 
             <a href="https://github.com/LibreDMR/OpenGD77_UserGuide">
-              <span class="label">Radioddity RD-5R Tier II</span>
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-radio-handheld"></i>
+                Radioddity RD-5R Tier II
+              </span>
             </a>
             <a href="https://www.rtl-sdr.com">
-              <span class="label">RTL-SDR Blog V3</span>
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-radio-tower"></i>
+                RTL-SDR Blog V3
+              </span>
             </a>
-            <span class="label"><s>WebSDR</s></span>
           </div>
 
           <div class="label-group">
-            <span class="header alt"><i aria-hidden="true" class="mdi mdi-tag"></i>電卓</span>
+            <span class="header alt"><i aria-hidden="true" class="mdi mdi-calculator"></i> 電卓</span>
 
-            <span class="label">カシオ fx-JP900 (CY-243 VerF)</span>
-            <span class="label">カシオ fx-991CN X (CY-239 VerC)</span>
-            <span class="label">キヤノン F-792SGA [F-789SGA からの改造]</span>
-            <span class="label">HP 48gII [39gs からの改造]</span>
-            <span class="label"><s>HP 39gII</s></span>
-            <span class="label"><s>HP Prime</s></span>
+            <a href="https://blog.apeiria.net/2020/hp39gs-upgrade/">
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-sine-wave"></i>
+                HP 48gII [39gs からの改造]
+              </span>
+            </a>
+            <span class="label">
+              <i aria-hidden="true" class="mdi mdi-math-integral"></i>
+              キヤノン F-792SGA [F-789SGA からの改造]
+            </span>
+            <span class="label">
+              <i aria-hidden="true" class="mdi mdi-table"></i>
+              カシオ fx-JP900 (CY-243 VerF)
+            </span>
+            <span class="label">
+              <i aria-hidden="true" class="mdi mdi-function-variant"></i>
+              カシオ fx-991CN X (CY-239 VerC)
+            </span>
           </div>
         </div>
       </div>
@@ -447,9 +469,6 @@
         <i aria-hidden="true" class="mdi mdi-source-fork"></i>
         「atomicneko」からのフォーク。御坂13514号によって変更されました。
       </a>
-    </div>
-
-    <div class="section footer shadow">
       <a class="hosting" href="https://apeiria.net">
         <i aria-hidden="true" class="mdi mdi-heart"></i>
         御坂13514号のホームページ
@@ -461,10 +480,6 @@
       </div>
     </div>
   </div>
-  <!-- Cloudflare Web Analytics -->
-  <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-    data-cf-beacon='{"token": "61fdef9df0224e89b3e67b20f2436261"}'></script>
-  <!-- End Cloudflare Web Analytics -->
 </body>
 
 </html>

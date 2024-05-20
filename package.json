@@ -13,28 +13,23 @@
   },
   "homepage": "https://futa.moe/amphineko/",
   "scripts": {
-    "build": "webpack -p",
-    "start": "webpack-dev-server -d"
+    "build": "webpack --mode production",
+    "start": "webpack serve --mode development"
   },
   "devDependencies": {
     "@mdi/font": "^5.9.55",
     "clean-webpack-plugin": "^4.0.0",
-    "css-loader": "^3.4.2",
-    "cssnano": "^4.1.10",
-    "extract-loader": "^5.1.0",
-    "file-loader": "^3.0.1",
-    "html-webpack-plugin": "^3.2.0",
-    "mini-css-extract-plugin": "^1.6.2",
-    "postcss-loader": "^3.0.0",
-    "postcss-preset-env": "^6.7.2",
-    "resolve-url-loader": "^5.0.0",
-    "style-loader": "^2.0.0",
+    "css-loader": "^7.1.1",
+    "cssnano": "^7.0.1",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.0",
+    "postcss": "^8.4.33",
+    "postcss-loader": "^8.1.1",
+    "postcss-preset-env": "^9.5.13",
     "unsemantic": "^1.2.3",
-    "url-loader": "^4.1.1",
-    "webpack": "^4.47.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0",
-    "webpack-merge": "^4.2.2"
-  },
-  "dependencies": {}
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4",
+    "webpack-merge": "^5.10.0"
+  }
 }

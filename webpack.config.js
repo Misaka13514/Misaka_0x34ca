@@ -2,12 +2,17 @@ const path = require("path");
 
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   context: path.resolve(__dirname, "src"),
 
   devServer: {
-    contentBase: path.resolve(__dirname, "dist"),
+    static: {
+      directory: path.join(__dirname, "dist"),
+    },
+    compress: true,
+    port: 8080,
   },
 
   devtool: "inline-source-map",
@@ -20,30 +25,25 @@ module.exports = {
     rules: [
       {
         test: /\.(eot|jpg|png|svg|ttf|webp|woff2?)$/,
-        loader: "file-loader",
-        options: {
-          name: "assets/[name].[contenthash:8].[ext]",
+        type: "asset/resource",
+        generator: {
+          filename: "assets/[name].[contenthash:8][ext]",
         },
       },
       {
         test: /\.(c|sa|sc)ss$/,
         use: [
-          "file-loader?name=[name].[contenthash:8].css",
-          "extract-loader",
-          {
-            loader: "css-loader",
-            options: {
-              importLoaders: 1,
-            },
-          },
+          MiniCssExtractPlugin.loader,
+          "css-loader",
           {
             loader: "postcss-loader",
             options: {
-              ident: "postcss",
-              plugins: () => [
-                require("cssnano")({ preset: "default" }),
-                require("postcss-preset-env")(),
-              ],
+              postcssOptions: {
+                plugins: [
+                  require("cssnano")({ preset: "default" }),
+                  require("postcss-preset-env")(),
+                ],
+              },
             },
           },
         ],
@@ -54,6 +54,7 @@ module.exports = {
   output: {
     filename: "[name].[contenthash:8].js",
     path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
 
   plugins: [
@@ -82,5 +83,8 @@ module.exports = {
     //   template: "eo.html",
     //   filename: "eo.html",
     // }),
+    new MiniCssExtractPlugin({
+      filename: "[name].[contenthash:8].css",
+    }),
   ],
 };

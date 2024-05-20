@@ -2,25 +2,24 @@
 <html lang="en">
 
 <head>
-  <link href="${require('./index.css')}" rel="stylesheet" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <title>About Misaka13514</title>
   <meta name="theme-color" content="#663399" />
-  <link rel="apple-touch-icon" sizes="180x180" href="${require('./assets/images/apple-touch-icon.png')}" />
-  <link rel="icon" type="image/png" sizes="32x32" href="${require('./assets/images/favicon-32x32.png')}" />
-  <link rel="icon" type="image/png" sizes="16x16" href="${require('./assets/images/favicon-16x16.png')}" />
-  <link rel="mask-icon" href="${require('./assets/images/safari-pinned-tab.svg')}" color="#663399" />
+  <link rel="apple-touch-icon" sizes="180x180" href="<%= require('./assets/images/apple-touch-icon.png') %>" />
+  <link rel="icon" type="image/png" sizes="32x32" href="<%= require('./assets/images/favicon-32x32.png') %>" />
+  <link rel="icon" type="image/png" sizes="16x16" href="<%= require('./assets/images/favicon-16x16.png') %>" />
+  <link rel="mask-icon" href="<%= require('./assets/images/safari-pinned-tab.svg') %>" color="#663399" />
 </head>
 
 <body>
   <div id="container">
     <div class="section header grid-container grid-parent">
       <div class="split picture-container grid-40">
-        <a href="${require('./assets/images/Misaka.png')}">
+        <a href="<%= require('./assets/images/Misaka.png') %>">
           <picture class="picture">
-            <source type="image/webp" srcset="${require('./assets/images/Misaka@1x.webp')}" />
-            <img src="${require('./assets/images/Misaka@1x.jpg')}" />
+            <source type="image/webp" srcset="<%= require('./assets/images/Misaka@1x.webp') %>" />
+            <img src="<%= require('./assets/images/Misaka@1x.jpg') %>" />
           </picture>
         </a>
       </div>
@@ -38,24 +37,24 @@
         <div class="label-group">
           <span class="header">language</span>
           <a href="en.html">
-            <span class="label" title="This user can communicate with a fluent level of English.">
+            <span class="label" title="I can communicate with a fluent level of English.">
               <i aria-hidden="true" class="mdi mdi-translate"></i>
               🇺🇸
               <strong>English</strong>
             </span>
           </a>
           <a href="zhs.html">
-            <span class="label" title="This user is a native speaker of Chinese.">
+            <span class="label" title="I am a native speaker of Chinese.">
               🇨🇳
             </span>
           </a>
           <a href="zht.html">
-            <span class="label" title="This user is a native speaker of Chinese.">
+            <span class="label" title="I am a native speaker of Chinese.">
               🇹🇼
             </span>
           </a>
           <a href="ja.html">
-            <span class="label" title="This user can communicate with a fluent level of Japanese.">
+            <span class="label" title="I can communicate with a fluent level of Japanese.">
               🇯🇵
             </span>
           </a>
@@ -64,22 +63,12 @@
         <div class="label-group">
           <span class="header">location</span>
           <a href="https://en.wikipedia.org/wiki/Shanghai">
-            <span class="label" title="This user lives in Shanghai.">
+            <span class="label" title="I live in Shanghai.">
               <i aria-hidden="true" class="mdi mdi-map-marker"></i>
               Asia/Shanghai
             </span>
           </a>
         </div>
-
-        <!-- <div class="label-group">
-          <span class="header">organization</span>
-          <a href="https://en.wikipedia.org/wiki/List_of_A_Certain_Magical_Index_characters#Sisters">
-            <span class="label" title="This Misaka is connected to the Misaka Network via the AIM Diffusion Field.">
-              <i aria-hidden="true" class="mdi mdi-account-group"></i>
-              Misaka Network
-            </span>
-          </a>
-        </div> -->
 
         <div class="label-group">
           <span class="header">MBTI</span>
@@ -104,7 +93,7 @@
         <div class="label-group">
           <span class="header">noc-operator</span>
           <a href="https://blog.apeiria.net/dn42-peering/">
-            <span class="label" title="Peer me in DN42!">
+            <span class="label" title="Peer me in Decentralized network 42!">
               <i aria-hidden="true" class="mdi mdi-lan"></i>
               AS4242421032
             </span>
@@ -119,7 +108,6 @@
               fish
             </span>
           </a>
-          <!-- <span class="label">zsh</span> -->
         </div>
 
         <div class="label-group">
@@ -152,10 +140,12 @@
           <span class="label">
             <i aria-hidden="true" class="mdi mdi-language-c"></i>
           </span>
-          <span class="label">
-            <i aria-hidden="true" class="mdi mdi-language-cpp"></i>
-          </span>
-          <a href="https://www.javascript.com">
+          <a href="https://www.stroustrup.com/C++.html">
+            <span class="label">
+              <i aria-hidden="true" class="mdi mdi-language-cpp"></i>
+            </span>
+          </a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
             <span class="label">
               <i aria-hidden="true" class="mdi mdi-language-javascript"></i>
             </span>
@@ -170,49 +160,35 @@
         <div class="label-group">
           <span class="header">platforms</span>
           <a href="https://archlinux.org">
-            <span class="label" title="This user uses Arch Linux on laptop and server.">
+            <span class="label" title="I use Arch Linux on laptop and server.">
               <i aria-hidden="true" class="mdi mdi-arch"></i>
-              Linux 6.8
+              Linux 6.9
             </span>
           </a>
           <a href="https://pve.proxmox.com">
-            <span class="label" title="This user uses Proxmox VE on homelab.">
+            <span class="label" title="I use Proxmox VE on homelab.">
               <i aria-hidden="true" class="mdi mdi-debian"></i>
               Proxmox VE
             </span>
           </a>
           <a href="https://www.synology.com/en-global/dsm">
-            <span class="label" title="This user uses Synology DiskStation Manager on NAS.">
+            <span class="label" title="I use Synology DiskStation Manager on NAS.">
               <i aria-hidden="true" class="mdi mdi-nas"></i>
               DSM
             </span>
           </a>
           <a href="https://github.com/immortalwrt/immortalwrt">
-            <span class="label" title="This user uses ImmortalWrt on router.">
+            <span class="label" title="I use ImmortalWrt on router.">
               <i aria-hidden="true" class="mdi mdi-router"></i>
               ImmortalWrt
             </span>
           </a>
           <a href="https://www.android.com/android-14/">
-            <span class="label" title="This user uses Android 14.">
+            <span class="label" title="I use Android 14.">
               <i aria-hidden="true" class="mdi mdi-android"></i>
               14
             </span>
           </a>
-          <!-- <a href="https://www.microsoft.com/en-us/windows/windows-11">
-            <span class="label" title="This user uses Windows 11.">
-              <i aria-hidden="true" class="mdi mdi-microsoft-windows"></i>
-              11
-            </span>
-          </a> -->
-          <!-- <a href="https://www.apple.com/macos/">
-            <span class="label" title="This user doesn't use macOS now.">
-              <del>
-                <i aria-hidden="true" class="mdi mdi-apple"></i>
-                macOS
-              </del>
-            </span>
-          </a> -->
         </div>
       </div>
     </div>
@@ -232,7 +208,13 @@
             technology is indistinguishable from magic, I am also trying to become a magical girl. XD.<br />
           </p>
           <p>
-            I am studying Japanese. Although the actual level is not very good, and I am not confident, I have passed
+            I work as a package maintainer for the <a href="https://wiki.archlinux.org/title/Arch_User_Repository">Arch
+              User Repository</a>. I also maintain some packages in <a
+              href="https://github.com/Homebrew/homebrew-cask">Homebrew</a> and <a
+              href="https://github.com/NixOS/nixpkgs">Nixpkgs</a>.<br />
+          </p>
+          <p>
+            I am studying Japanese. Although my speaking and writing skills still need to be improved, I have passed
             the <a href="https://www.jlpt.jp/e/about/index.html">Japanese Language Proficiency Test (JLPT)</a> N1.<br />
           </p>
         </div>
@@ -268,8 +250,15 @@
               <li>
                 <a href="https://twitter.com/Misaka13514">
                   <i aria-hidden="true" class="mdi mdi-twitter"></i>
-                  <span class="label">Twitter</span>
+                  <span class="label">Twitter (English)</span>
                   <span class="fake-link">Misaka13514</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/Misaka_0x34ca">
+                  <i aria-hidden="true" class="mdi mdi-twitter"></i>
+                  <span class="label">Twitter (Japanese)</span>
+                  <span class="fake-link">Misaka_0x34ca</span>
                 </a>
               </li>
               <li>
@@ -300,13 +289,6 @@
                   <span class="fake-link">5BA9 2099 D9BE 2DAA</span>
                 </a>
               </li>
-              <!-- <li class="shutdown">
-                <a href="#">
-                  <i aria-hidden="true" class="mdi mdi-google-hangouts"></i>
-                  <span class="label">Google Hangouts</span>
-                  <span class="fake-link">Misaka13514</span>
-                </a>
-              </li> -->
             </ul>
           </figure>
         </div>
@@ -319,63 +301,59 @@
 
         <div class="split grid-50 mobile-grid-100">
           <p>
-            I learned many things, but not proficient.<br />
-            I am operating my own Internet autonomous system.<br />
+            I learned a lot of technologies, but I didn't master many. I don’t have a fixed direction of learning, I
+            only focus on the knowledge I think is necessary to master.<br />
+          </p>
+          <p>
             I have experience in
             <a href="https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)">
-              Capture the Flag</a>, but I don't
-            know how to write algorithms in
+              Capture the Flag</a>, but I'm not good at writing algorithms in
             <a href="https://en.wikipedia.org/wiki/Competitive_programming">
-              Competitive programming</a> at all.<br />
-            I hold the China's Amateur Radio Operation License level B, and can transmit and receive on all amateur
-            radio frequencies.<br />
+              Competitive programming</a>. Rather than writing entirely new programs, I'm better at finding other
+            people's solutions and trying to run, maintain, and optimize them.<br />
+          </p>
+          <p>
+            I hold the
+            <a href="https://en.wikipedia.org/wiki/Amateur_radio_licensing_in_China">Amateur Radio Operation Licence
+              Class C</a> issued by the Chinese Radio Amateurs Club (CRAC). However, due to time and financial
+            constraints, I have not yet accumulated sufficient practical experience.<br />
           </p>
         </div>
 
         <div class="split grid-50 mobile-grid-100">
           <p>
-            I have no direction in learning, and I only start learning when I need to use it.<br />
+            I enjoy maintaining Linux systems and related software packages. There are about 40 packages on my AUR,
+            including the more popular ones like Gqrx, EasyEDA, FreeRouting, and others. I dream of becoming a part of
+            the official Arch Linux team.<br />
           </p>
-          <div class="label-group">
-            <span class="header alt"><i aria-hidden="true" class="mdi mdi-tag"></i>experienced thing</span>
-
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-linux"></i>
-              Linux
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-language-python"></i>
-              Python
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-laptop"></i>
-              Arduino
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-lan"></i>
-              computer network
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-lock"></i>
-              cybersecurity
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-radio-tower"></i>
-              amateur radio
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-wrench"></i>
-              electronic DIY
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-lightning-bolt"></i>
-              electromagnetic acceleration
-            </span>
-            <span class="label">
-              <i aria-hidden="true" class="mdi mdi-server"></i>
-              <s>full stack development</s>
-            </span>
-          </div>
+          <figure class="identities">
+            <figcaption>
+              <i class="mdi mdi-open-in-new"></i>AUR
+            </figcaption>
+            <ul>
+              <li>
+                <a href="https://github.com/Misaka13514-AUR/PKGBUILDs">
+                  <i aria-hidden="true" class="mdi mdi-source-repository"></i>
+                  <span class="label">PKGBUILD</span>
+                  <span class="fake-link">Misaka13514-AUR/PKGBUILDs</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://aur.archlinux.org/account/Misaka13514">
+                  <i aria-hidden="true" class="mdi mdi-arch"></i>
+                  <span class="label">AUR</span>
+                  <span class="fake-link">Misaka13514</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://repo.apeiria.net">
+                  <i aria-hidden="true" class="mdi mdi-server"></i>
+                  <span class="label">My Arch Linux repository</span>
+                  <span class="fake-link">repo.apeiria.net</span>
+                </a>
+              </li>
+            </ul>
+          </figure>
         </div>
       </div>
     </div>
@@ -402,43 +380,82 @@
 
         <div class="split grid-50 mobile-grid-100">
           <div class="label-group">
-            <span class="header alt"><i aria-hidden="true" class="mdi mdi-tag"></i>devices</span>
+            <span class="header alt"><i aria-hidden="true" class="mdi mdi-devices"></i> devices</span>
 
             <a href="https://wiki.archlinux.org/title/Intel_NUC_X15">
-              <span class="label">Intel NUC X15 (LAPKC71F)</span>
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-laptop"></i>
+                Intel NUC X15 (LAPKC71F)
+              </span>
             </a>
             <a href="https://blog.apeiria.net/2023/build-my-homelab/">
-              <span class="label">HP EliteDesk 800 G4 TWR</span>
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-desktop-tower"></i>
+                HP EliteDesk 800 G4 TWR
+              </span>
             </a>
             <a href="https://evolution-x.org/device/raphael">
-              <span class="label">Xiaomi Mi 9T Pro (raphael)</span>
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-cellphone"></i>
+                Xiaomi Mi 9T Pro (raphael)
+              </span>
             </a>
             <a href="https://openwrt.org/toh/friendlyarm/nanopi_r2s">
-              <span class="label">FriendlyARM NanoPi R2S</span>
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-router"></i>
+                FriendlyARM NanoPi R2S
+              </span>
             </a>
+            <a href="https://blog.apeiria.net/2020/ax3600-ssh-clash/">
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-access-point"></i>
+                Xiaomi AX3600
+              </span>
+            </a>
+            <span class="label">
+              <i aria-hidden="true" class="mdi mdi-printer"></i>
+              HP Deskjet 2540
+            </span>
           </div>
 
           <div class="label-group">
-            <span class="header alt"><i aria-hidden="true" class="mdi mdi-tag"></i>amateur radio transceivers</span>
+            <span class="header alt"><i aria-hidden="true" class="mdi mdi-radio"></i> amateur radio transceivers</span>
 
             <a href="https://github.com/LibreDMR/OpenGD77_UserGuide">
-              <span class="label">Radioddity RD-5R Tier II</span>
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-radio-handheld"></i>
+                Radioddity RD-5R Tier II
+              </span>
             </a>
             <a href="https://www.rtl-sdr.com">
-              <span class="label">RTL-SDR Blog V3</span>
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-radio-tower"></i>
+                RTL-SDR Blog V3
+              </span>
             </a>
-            <span class="label"><s>WebSDR</s></span>
           </div>
 
           <div class="label-group">
-            <span class="header alt"><i aria-hidden="true" class="mdi mdi-tag"></i>calculators</span>
+            <span class="header alt"><i aria-hidden="true" class="mdi mdi-calculator"></i> calculators</span>
 
-            <span class="label">CASIO fx-JP900 (CY-243 VerF)</span>
-            <span class="label">CASIO fx-991CN X (CY-239 VerC)</span>
-            <span class="label">Canon F-792SGA [F-789SGA upgraded]</span>
-            <span class="label">HP 48gII [39gs upgraded]</span>
-            <span class="label"><s>HP 39gII</s></span>
-            <span class="label"><s>HP Prime</s></span>
+            <a href="https://blog.apeiria.net/2020/hp39gs-upgrade/">
+              <span class="label">
+                <i aria-hidden="true" class="mdi mdi-sine-wave"></i>
+                HP 48gII [39gs upgraded]
+              </span>
+            </a>
+            <span class="label">
+              <i aria-hidden="true" class="mdi mdi-math-integral"></i>
+              Canon F-792SGA [F-789SGA upgraded]
+            </span>
+            <span class="label">
+              <i aria-hidden="true" class="mdi mdi-table"></i>
+              CASIO fx-JP900 (CY-243 VerF)
+            </span>
+            <span class="label">
+              <i aria-hidden="true" class="mdi mdi-function-variant"></i>
+              CASIO fx-991CN X (CY-239 VerC)
+            </span>
           </div>
         </div>
       </div>
@@ -449,9 +466,6 @@
         <i aria-hidden="true" class="mdi mdi-source-fork"></i>
         A fork of atomicneko. Modified by Misaka13514.
       </a>
-    </div>
-
-    <div class="section footer shadow">
       <a class="hosting" href="https://apeiria.net">
         <i aria-hidden="true" class="mdi mdi-heart"></i>
         Misaka13514's homepage
@@ -463,10 +477,6 @@
       </div>
     </div>
   </div>
-  <!-- Cloudflare Web Analytics -->
-  <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-    data-cf-beacon='{"token": "61fdef9df0224e89b3e67b20f2436261"}'></script>
-  <!-- End Cloudflare Web Analytics -->
 </body>
 
 </html>

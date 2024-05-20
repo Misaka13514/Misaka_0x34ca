@@ -2,22 +2,26 @@
 <html>
 
 <head>
-  <link href="${require('./index.css')}" rel="stylesheet" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <title>About Misaka13514</title>
   <meta name="theme-color" content="#663399" />
-  <link rel="apple-touch-icon" sizes="180x180" href="${require('./assets/images/apple-touch-icon.png')}" />
-  <link rel="icon" type="image/png" sizes="32x32" href="${require('./assets/images/favicon-32x32.png')}" />
-  <link rel="icon" type="image/png" sizes="16x16" href="${require('./assets/images/favicon-16x16.png')}" />
-  <link rel="mask-icon" href="${require('./assets/images/safari-pinned-tab.svg')}" color="#663399" />
+  <link rel="apple-touch-icon" sizes="180x180" href="<%= require('./assets/images/apple-touch-icon.png') %>" />
+  <link rel="icon" type="image/png" sizes="32x32" href="<%= require('./assets/images/favicon-32x32.png') %>" />
+  <link rel="icon" type="image/png" sizes="16x16" href="<%= require('./assets/images/favicon-16x16.png') %>" />
+  <link rel="mask-icon" href="<%= require('./assets/images/safari-pinned-tab.svg') %>" color="#663399" />
 </head>
 
 <body>
   <div id="container">
     <div class="section header grid-container grid-parent">
+    </div>
+
+    <div class="section intro">
+      <h2>
+        <i aria-hidden="true" class="mdi mdi-chevron-right"></i>Choose a language
+      </h2>
       <div class="label-group">
-        <span class="header">choose a language</span>
         <a href="zhs.html">
           <span class="label">
             <i aria-hidden="true" class="mdi mdi-translate"></i>
@@ -28,7 +32,7 @@
         <a href="zht.html">
           <span class="label">
             🇹🇼
-            繁體中文
+            正體中文
           </span>
         </a>
         <a href="ja.html">
@@ -44,36 +48,36 @@
           </span>
         </a>
       </div>
-    </div>
-
-    <div class="section intro">
       <div class="block grid-container grid-parent">
         <div class="split grid-50 mobile-grid-100">
-          <h2>
-            <i aria-hidden="true" class="mdi mdi-chevron-right"></i>Choose a language
-          </h2>
           <small>
             <p>
-              Please choose a language.
-              The page will be redirected automatically in a few seconds.
-              Different pages may contain different content.
+              请选择语言。<br />
+              页面将在几秒钟内自动重定向。<br />
+              不同的页面可能会包含不同的内容。<br />
             </p>
             <p>
-              请选择语言。
-              页面将在几秒钟内自动重定向。
-              不同的页面可能会包含不同的内容。
-            </p>
-            <p>
-              請選擇語言。
-              頁面將在幾秒鐘內自動重定向。
-              不同的頁面可能會包含不同的內容。
-            </p>
-            <p>
-              言語を選択してください。
-              ページは数秒で自動的にリダイレクトされます。
-              異なるページには異なるコンテンツが含まれている場合があります。
+              請選擇語言。<br />
+              頁面將在幾秒鐘內自動重定向。<br />
+              不同的頁面可能會包含不同的內容。<br />
             </p>
           </small>
+        </div>
+        <div class="block grid-container grid-parent">
+          <div class="split grid-50 mobile-grid-100">
+            <small>
+              <p>
+                言語を選択してください。<br />
+                ページは数秒で自動的にリダイレクトされます。<br />
+                異なるページには異なるコンテンツが含まれている場合があります。<br />
+              </p>
+              <p>
+                Please choose a language.<br />
+                The page will be redirected automatically in a few seconds.<br />
+                Different pages may contain different content.<br />
+              </p>
+            </small>
+          </div>
         </div>
       </div>
     </div>
@@ -83,9 +87,6 @@
         <i aria-hidden="true" class="mdi mdi-source-fork"></i>
         A fork of atomicneko. Modified by Misaka13514.
       </a>
-    </div>
-
-    <div class="section footer shadow">
       <a class="hosting" href="https://apeiria.net">
         <i aria-hidden="true" class="mdi mdi-heart"></i>
         Misaka13514's homepage
@@ -97,10 +98,6 @@
       </div>
     </div>
   </div>
-  <!-- Cloudflare Web Analytics -->
-  <script defer src='https://static.cloudflareinsights.com/beacon.min.js'
-    data-cf-beacon='{"token": "61fdef9df0224e89b3e67b20f2436261"}'></script>
-  <!-- End Cloudflare Web Analytics -->
 </body>
 
 <script data-cfasync="false">
