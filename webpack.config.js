@@ -15,7 +15,7 @@ module.exports = {
     port: 8080,
   },
 
-  devtool: "inline-source-map",
+  devtool: false,
 
   entry: {
     index: "./index.js",

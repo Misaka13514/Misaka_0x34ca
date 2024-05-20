@@ -13,7 +13,7 @@
   },
   "homepage": "https://futa.moe/amphineko/",
   "scripts": {
-    "build": "webpack --mode production",
+    "build": "webpack --mode development",
     "start": "webpack serve --mode development"
   },
   "devDependencies": {
