@@ -4,6 +4,18 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+const minify = {
+  caseSensitive: true,
+  collapseWhitespace: true,
+  conservativeCollapse: true,
+  keepClosingSlash: true,
+  minifyCSS: true,
+  minifyJS: true,
+  removeComments: true,
+  removeScriptTypeAttributes: true,
+  removeStyleLinkTypeAttributes: true,
+};
+
 module.exports = {
   context: path.resolve(__dirname, "src"),
 
@@ -62,26 +74,32 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "index.html",
       filename: "index.html",
+      minify,
     }),
     new HtmlWebpackPlugin({
       template: "en.html",
       filename: "en.html",
+      minify,
     }),
     new HtmlWebpackPlugin({
       template: "zhs.html",
       filename: "zhs.html",
+      minify,
     }),
     new HtmlWebpackPlugin({
       template: "zht.html",
       filename: "zht.html",
+      minify,
     }),
     new HtmlWebpackPlugin({
       template: "ja.html",
       filename: "ja.html",
+      minify,
     }),
     // new HtmlWebpackPlugin({
     //   template: "eo.html",
     //   filename: "eo.html",
+    //   minify,
     // }),
     new MiniCssExtractPlugin({
       filename: "[name].[contenthash:8].css",
