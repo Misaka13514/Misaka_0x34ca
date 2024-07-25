@@ -8,8 +8,6 @@
 @import "stylesheets/intro.css";
 @import "stylesheets/labels.css";
 
-@import "stylesheets/readmore.css";
-
 body {
   background: url(./assets/images/plus.svg) #044f67;
   background-size: 8em;
