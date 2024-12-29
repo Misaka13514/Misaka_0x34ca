@@ -95,6 +95,17 @@
   transform: scaleX(0.9999);
 }
 
+.intro a.disable-effect,
+.intro a.disable-effect:hover {
+  color: inherit;
+}
+
+.intro a.disable-effect:before {
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: none;
+}
+
 @media (prefers-color-scheme: dark) {
   .intro h2 {
     color: #ddd;

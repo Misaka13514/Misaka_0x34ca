@@ -17,7 +17,7 @@
     "start": "webpack serve --mode development"
   },
   "devDependencies": {
-    "@mdi/font": "^5.9.55",
+    "@mdi/font": "https://github.com/MSKNET/MaterialDesign-Webfont",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^7.1.1",
     "cssnano": "^7.0.1",
